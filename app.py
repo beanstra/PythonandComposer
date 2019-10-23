@@ -25,6 +25,7 @@ def hello():
     count = get_hit_count()
     # hostname = socket.gethostbyname()
     # IPAddr = socket.gethostbyname(hostname)
-    ip_address = socket.gethostbyaddr(socket.gethostbyname()) 
+    # ip_address = socket.gethostbyaddr(socket.gethostbyname()) 
     # IPaddr = socket.gethostbyaddr(ip_address)
+    ip_address = request.remote_addr
     return 'Hello World. Sjoerd & Jako here ! this app has been seen {} times.\n'.format(count) + ip_address
