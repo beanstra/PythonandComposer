@@ -23,5 +23,6 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
+    hostname = socket.gethostbyname()
     IPAddr = socket.gethostbyname(hostname) 
     return 'Hello World. Sjoerd & Jako here ! this app has been seen {} times.\n'.format(count) + IPAddr
