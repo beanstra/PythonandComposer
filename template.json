@@ -194,7 +194,7 @@
                         "name": "http",
                         "properties": {
                             "description": "Allow HTTP",
-                            "protocol": "Tco",
+                            "protocol": "Tcp",
                             "sourcePortRange": "*",
                             "destinationPortRange": "5000",
                             "sourceAddressPrefix": "*",
