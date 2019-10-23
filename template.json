@@ -191,16 +191,16 @@
             "properties": {
                 "securityRules": [
                     {
-                        "name": "httpin",
+                        "name": "http",
                         "properties": {
                             "description": "Allow HTTP",
-                            "protocol": "*",
+                            "protocol": "Tco",
                             "sourcePortRange": "*",
-                            "destinationPortRange": "*",
+                            "destinationPortRange": "5000",
                             "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "*",
+                            "destinationAddressPrefix": "Internet",
                             "access": "Allow",
-                            "priority": 100,
+                            "priority": 300,
                             "direction": "Inbound"
                         }
                     },
