@@ -27,7 +27,7 @@
       "value": "demowpsql"
     },
     "location": {
-      "value": "[resourceGroup().location]"
+      "value": "westeurope"
     },
     "authenticationType": {
       "value": "sshPublicKey"
