@@ -23,5 +23,5 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return 'Hello World. Sjoerd & Jako here ! this app has been seen {} times.\n'.format(count)
-    return jsonify({'ip': request.remote_addr}), 200
+    IPAddr = socket.gethostbyname(hostname) 
+    return 'Hello World. Sjoerd & Jako here ! this app has been seen {} times.\n'.format(count) + IPAddr
