@@ -24,7 +24,7 @@ def get_hit_count():
 @app.route("/get_my_ip", methods=["GET"])
 def get_my_ip():
     return jsonify({'ip': request.remote_addr}), 200
-    return request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
+    print "IP:" (request.environ.get('HTTP_X_REAL_IP', request.remote_addr))
 
 @app.route('/')
 def hello():
