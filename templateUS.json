@@ -52,7 +52,7 @@
             }
         },
         "location": {
-            "defaultValue": "central us",
+            "defaultValue": "centralus",
             "type": "String",
             "metadata": {
                 "description": "Location for all resources."
@@ -81,19 +81,19 @@
         "imageOffer": "UbuntuServer",
         "ubuntuOSVersion": "16.04.0-LTS",
         "OSDiskName": "osdiskfordockersimple",
-        "nsgName": "myNSG",
-        "nicName": "myVMNic",
+        "nsgName": "myNSGus",
+        "nicName": "myVMNicus",
         "extensionName": "DockerExtension",
         "addressPrefix": "10.0.0.0/16",
         "subnetName": "Subnet",
         "subnetPrefix": "10.0.0.0/24",
         "storageAccountType": "Standard_LRS",
-        "publicIPAddressName": "myPublicIP",
+        "publicIPAddressName": "myPublicIPus",
         "publicIPAddressType": "Dynamic",
-        "vmStorageAccountContainerName": "vhds",
-        "vmName": "MyDockerVM",
+        "vmStorageAccountContainerName": "vhdsus",
+        "vmName": "MyDockerVMus",
         "vmSize": "Standard_B1ms",
-        "virtualNetworkName": "MyVNET",
+        "virtualNetworkName": "MyVNETus",
         "nsgID": "[resourceId('Microsoft.Network/networkSecurityGroups',variables('nsgName'))]",
         "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
         "linuxConfiguration": {
