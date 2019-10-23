@@ -194,11 +194,11 @@
                         "name": "http",
                         "properties": {
                             "description": "Allow HTTP",
-                            "protocol": "Tcp",
+                            "protocol": "*",
                             "sourcePortRange": "*",
                             "destinationPortRange": "5000",
                             "sourceAddressPrefix": "*",
-                            "destinationAddressPrefix": "Internet",
+                            "destinationAddressPrefix": "*",
                             "access": "Allow",
                             "priority": 300,
                             "direction": "Inbound"
