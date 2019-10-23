@@ -24,12 +24,7 @@ def get_hit_count():
 @app.route("/get_my_ip", methods=["GET"])
 def get_my_ip():
     return jsonify({'ip': request.remote_addr}), 200
-    print(request.remote_addr)
-
-if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
-    print(request.environ['REMOTE_ADDR'])
-else:
-    print(request.environ['HTTP_X_FORWARDED_FOR']) # if behind a proxy
+    return request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
 
 @app.route('/')
 def hello():
