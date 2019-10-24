@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "newStorageAccountName": {
-      "value": "eustoragedemo"
+      "value": "sjoerdstorage"
     },
     "VSTSAccountName": {
       "value": "sjoerdboonstra626"
@@ -24,10 +24,16 @@
       "value": "demo"
     },
     "dnsNameForPublicIP": {
-      "value": "demowpsql"
+      "value": "wowie"
     },
     "location": {
       "value": "westeurope"
+    },
+    "location1": {
+      "value": "eastus"
+    },
+    "location2": {
+      "value": "eastjapan"
     },
     "authenticationType": {
       "value": "sshPublicKey"
