@@ -24,7 +24,7 @@
       "value": "demo"
     },
     "dnsNameForPublicIP": {
-      "value": "demowpsql"
+      "value": "JPNdemowpsql"
     },
     "location": {
       "value": "westeurope"

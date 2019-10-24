@@ -24,7 +24,7 @@
       "value": "demo"
     },
     "dnsNameForPublicIP": {
-      "value": "demowpsql"
+      "value": "USdemowpsql"
     },
     "location": {
       "value": "centralus"
